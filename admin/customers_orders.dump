@@ -1,0 +1,343 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE customers (
+id                 int PRIMARY KEY,
+date               int,
+fname              text,
+lname              text,
+email              text,
+street_addr1       text,
+street_addr2       text,
+city               text,
+state              text,
+zip                text,
+chassis_cnt        int default 0,
+blank_bezel_cnt    int default 0,
+fpMini_bezel_cnt   int default 0,
+imsai_Bezel_cnt    int default 0,
+nineslot_pcb_cnt   int default 0,
+fpmini_pcb_cnt     int default 0,
+imsai_switch_set_cnt   int default 0,
+imsai_cpa_pcb_cnt  int default 0,
+invoice_no         text,
+amount_rcvd        int default 0 
+, country text);
+INSERT INTO customers VALUES(1,'','Sean','Adkins','sean@w2enterprise.com','77-177 Halawai Way','','Kailua Kona','HI','96740',1,1,1,1,1,1,0,1,'',150,'United States');
+INSERT INTO customers VALUES(2,'','Evan','Allen','abzman2000@gmail.com','449 W Madge','','Hazel Park','MI','48030',1,1,0,1,1,0,1,1,'',150,'United States');
+INSERT INTO customers VALUES(3,'','Corey','Anderson','corey.kg7ux@gmail.com','3122 NE Glencoe Oaks PL','','Hillsboro','OR','97124',1,1,0,0,0,0,0,0,'',150,'United States');
+INSERT INTO customers VALUES(4,'','Earl','Baugh','earl@baugh.org','115 Hydrangea Court','','Alpharetta','GA','30005',1,1,1,1,1,0,1,1,'',150,'United States');
+INSERT INTO customers VALUES(5,'','Gregory','Beat','w9gb@icloud.com','200 N. Michigan Ave','#324','Elmhurst','IL','60126',1,1,1,0,0,0,0,0,'',150,'United States');
+INSERT INTO customers VALUES(6,'','Bob','Bell','bbell770@gmail.com','210 Loyal Dr.','','Mechanicsburg','PA','17050',1,0,0,1,1,0,1,1,'',150,'United States');
+INSERT INTO customers VALUES(7,'','Greg','Bober','greglori_mi@wowway.com','22421 Edmunton','','Saint Clair Shores','MI','48080',1,1,1,1,1,0,1,1,'',221,'United States');
+INSERT INTO customers VALUES(8,'','Lyndon','BRADISH','Lyndon@Bradish.ca','33 Gradwell Drive','','Scarborough, ON','ON','M1M 2N1',0,0,1,1,0,0,1,1,'',150,'Canada');
+INSERT INTO customers VALUES(9,'','Roy','Bragg','sirbragg@yahoo.com','401 N. Oak St.','','Reedsburg','WI','53959',1,1,0,1,0,0,0,1,'',150,'United States');
+INSERT INTO customers VALUES(10,'','Henry','Broekhuyse','broekh@telus.net','2963 27th Ave W','','Vancouver','BC','V6L 1W4',2,2,0,0,1,0,0,0,'',150,'Canada');
+INSERT INTO customers VALUES(11,'','Dennis','Bushmitch','dbushmitch@yahoo.com','20 S Perch Creek Dr','','Newark','DE','19702',1,1,1,0,1,0,0,0,'',150,'United States');
+INSERT INTO customers VALUES(12,'','Leon','Byles','leonb@swiftdsl.com.au','11 Marine View','','The Hill','NSW','2300',1,1,1,1,1,0,1,1,'',150,'Australia');
+INSERT INTO customers VALUES(13,'','Rich','Camarda','rcamarda@aol.com','74430 Millennia Way','','Palm Desert','CA','92211',1,1,1,0,1,1,0,0,'',150,'United States');
+INSERT INTO customers VALUES(14,'','Scott','Campbell','','','','','','',1,1,0,0,0,0,0,0,'','','United States');
+INSERT INTO customers VALUES(15,'','donald','caprio','caprio@uxpro.com','430 DISCOVERY BAY BLVD','','DISCOVERY BAY','CA','94505',1,1,1,1,1,0,2,0,'','','United States');
+INSERT INTO customers VALUES(16,'','David','Carroll','dwcar49us@yahoo.com','1930 Greenfield Ave','','Los Angeles','CA','90025',2,1,1,4,2,1,4,4,'',150,'United States');
+INSERT INTO customers VALUES(17,'','Laurence','church','LChurch5@juno.com','5200 White Settlement Rd.','Apt#1371','Fort Worth','TX','76114',1,1,1,1,0,0,0,1,'',150,'United States');
+INSERT INTO customers VALUES(18,'','Jay','Cotton','Lbmgmusic@gmail.com','3115 W. Woodside Ave','','Roseburg','Oregon','97471',1,1,0,1,0,0,0,0,'',150,'United States');
+INSERT INTO customers VALUES(19,'','Geoff','Coward','geoffcoward@gmail.com','3215 Mataro St','','Pasadena','CA','91107',1,1,0,0,0,0,0,0,'',150,'United States');
+INSERT INTO customers VALUES(20,'','Chris','Davis','chris@famousdavispro.com','2007 10th St SW','','Willmar','MN','56201',1,1,0,0,0,0,0,0,'',150,'United States');
+INSERT INTO customers VALUES(21,'','Eric','Dittman','dittman@dittman.net','1716 Falmouth Drive','','Plano','TX','75025',1,1,1,1,1,1,1,1,'',113,'United States');
+INSERT INTO customers VALUES(22,'','Randy','Eubanks','RandyEubanks@yahoo.com','1600 N Kraemer Blvd','Attn: Randy Eubanks','Anaheim','CA','92806-1410',4,1,2,2,0,0,2,0,'',150,'United States');
+INSERT INTO customers VALUES(23,'','Steven','Feinsmith','steven.feinsmith@gmail.com','','','','','',0,0,0,0,0,0,1,0,'','','United States');
+INSERT INTO customers VALUES(24,'','Lenard','Dauksza','leonard@dauksza.com','','','','','',0,0,0,0,0,0,1,0,'','','United States');
+INSERT INTO customers VALUES(25,'','donald','forsyth','donald@lue-forsyth.co.uk','avondhu cottage','lochard road, Aberfoyle','Stirling','AZ','fk8 3td',1,1,1,1,0,0,1,3,'',190.59999999999998721,'UK');
+INSERT INTO customers VALUES(26,'','Jeff','Galinat','jgalinat@gmail.com','10990 E. Via Tranquilla','','Tucson','AZ','85749',1,1,1,2,1,1,0,0,'',150,'United States');
+INSERT INTO customers VALUES(27,'','Daniel','Gallant','beru9664@hotmail.com','10352 route 134','','Portage St-Louis','New Brunswick','E4X 2L2',1,1,0,0,0,0,0,0,'',150,'Canada');
+INSERT INTO customers VALUES(28,'','Todd','Goodman','tsg@bonedaddy.net','656 North Rd','','Candia','NH','03034',2,2,2,2,0,1,2,2,'',150,'United States');
+INSERT INTO customers VALUES(29,'','Bob','Grabau','rgrabau1@verizon.net','203 Pennsylvania Ave','','Camp Hill','PA','17011',1,1,1,0,0,0,0,0,'',150,'United States');
+INSERT INTO customers VALUES(30,'','Steven','Hamilton','sdhpgmr@gmail.com','146 Glascock Road','','Weiser','ID','83672',1,1,1,1,1,0,1,1,'',150,'United States');
+INSERT INTO customers VALUES(31,'','James','Haug','jkhaug@mac.com','3106 Morningside Rd','','Rapid City','SD','57702',1,1,1,1,1,0,1,1,'',150,'United States');
+INSERT INTO customers VALUES(32,'','Andrew','Houck','anhouck@gmail.com','1628 Russett Rd.','','Orefield','PA','18069',1,1,1,1,1,0,0,0,'',150,'United States');
+INSERT INTO customers VALUES(33,'','Doug','Jackson','doug@doughq.com','5 Pinschof Place','','Conder','ACT','2906',1,1,1,0,1,1,0,0,'',150,'Australia');
+INSERT INTO customers VALUES(34,'','John','Kennedy','johntkennedy@gmail.com','318 5th Ave S','','Kirkland','WA','98033',1,1,1,0,1,1,1,1,'',150,'United States');
+INSERT INTO customers VALUES(35,'','Kevin','Kozlowski','kkozlowski63@gmail.com','','','','','',0,0,0,0,0,0,2,0,'','','United States');
+INSERT INTO customers VALUES(36,'','Steve','Mastrianni','steve.mastrianni@gmail.com','322 Westchester Road','','Colchester','CT','06415',2,2,2,2,0,0,2,2,'',150,'United States');
+INSERT INTO customers VALUES(37,'','Dave','McGuire','mcguire@issmuseum.org','','','','','',0,0,0,0,0,0,0,0,'','','United States');
+INSERT INTO customers VALUES(38,'','John','Monahan','','','','Dublin','CA','',1,1,1,1,0,0,0,0,'',0,'United States');
+INSERT INTO customers VALUES(39,'','sgi','Nekonoko','sgi.nekochan@gmail.com','','','','','',0,0,0,0,0,0,1,0,'','','United States');
+INSERT INTO customers VALUES(40,'','Mike','Niswonger','mike.niswonger@cox.net','52 Port Dixie Blvd','','Shalimar','FL','32579',2,2,1,1,2,0,1,1,'',150,'United States');
+INSERT INTO customers VALUES(41,'','Jesse','Lafleur','jesslafleur@gmail.com','','','','','',0,0,0,0,0,0,0,1,'','','United States');
+INSERT INTO customers VALUES(42,'','Mike','Noel','mikenoel37@gmail.com','4209 taku blvd','','Juneau','AK','99801',1,0,1,1,0,0,0,1,'',150,'United States');
+INSERT INTO customers VALUES(43,'','Jim','OKeefe','jimokeefe39@gmail.com','C/O Tom Killoran Photography','11316 S. Harlem Ave.','Worth','IL','60482',1,1,1,1,0,0,0,1,'',150,'United States');
+INSERT INTO customers VALUES(44,'','Brent','Parker','brent@pwg.net','1555 Fruitville Rd','','Sarasota','FL','34236',1,1,1,1,0,0,1,1,'','','United States');
+INSERT INTO customers VALUES(45,'','MIchael','Petry','petry@netmasters.com','7217 Tall Pine Way','','Clarksville','MD','21029',1,1,0,1,1,0,1,1,'',150,'United States');
+INSERT INTO customers VALUES(46,'','Peter','Plank','sgi.nekochan@gmail.com','3630 Andrews Dr.','Apt. 216','Pleasanton','CA','94588',1,1,1,1,1,0,0,1,'',150,'United States');
+INSERT INTO customers VALUES(47,'','Jerry','Prusa','jerry.prusa@gmail.com','1614 Redwing Ave','','Sunnyvale','CA','94087',1,1,1,1,1,1,1,0,'',150,'United States');
+INSERT INTO customers VALUES(48,'','Bill','Saltzstein','billsalt42@gmail.com','164 Clear Creek Drive #201','','Ashland','OR','97520',1,1,1,1,0,1,1,1,'',150,'United States');
+INSERT INTO customers VALUES(49,'','Al','Schemmer','al.schemmer@outlook.com','1100 10th St.','','Hawarden','IA','51023',3,1,1,2,3,0,3,2,'',150,'United States');
+INSERT INTO customers VALUES(50,'','Thomas','VonDerHaar','tvonderhaar@indy.rr.com','5525B Roxbury Terrace','Apt. B','Indianapolis','IN','46226',1,2,1,0,0,1,0,0,'',150,'United States');
+INSERT INTO customers VALUES(51,'','Wayne','Warthen','wwarthen@gmail.com','35853 Bay Sable Ln','','Fallbrook','CA','92028',1,1,1,1,1,1,1,1,'',150,'United States');
+INSERT INTO customers VALUES(52,'','robert','weatherford','rweather58@gmail.com','10945 State Bridge Rd','STE 401 PMB 245','johns creek','GA','30022',1,1,0,1,1,0,0,1,'',150,'United States');
+INSERT INTO customers VALUES(53,'','Douglas','Wood','doug_wood@yahoo.com','402-1875 Glenanna Road','','Pickering','ON','L1V 3V6',1,1,1,1,0,0,0,1,'',150,'Canada');
+INSERT INTO customers VALUES(54,'','Leonard','Young','lcyoung@bellsouth.net','4836 High Forest Dr.','','Duluth','GA','30096',1,1,1,1,1,1,1,0,'',150,'United States');
+INSERT INTO customers VALUES(55,NULL,'Mark','Huffstutter',NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,0,0,0,1,'',0,'United States');
+INSERT INTO customers VALUES(56,NULL,'Walt','Perko',NULL,'4652 N. Rainbow Blvd. Apt. 320',NULL,'Las Vegas','NV','89108',0,0,0,0,0,0,1,1,'',0,'United States');
+INSERT INTO customers VALUES(58,'2022-04-26 19:34:58','Mohd Akmal Mohd','Rosli','m-codec@mobile.softmaker.biz','Tamonji 306-1',NULL,'Kazo','Saitama','347-0012',1,1,1,1,1,1,0,0,'',236,'Japan');
+INSERT INTO customers VALUES(59,'2022-05-05 00:59:50','Daniel','Smith','dandantheman@gmail.com','4938 Idlewood Dr',NULL,'Baton Rouge','LA','70809',1,0,0,1,1,0,2,2,NULL,0,NULL);
+INSERT INTO customers VALUES(60,'2022-05-05 16:41:53','Peter','Chapman','petechapman@frontiernet.net',NULL,NULL,NULL,NULL,NULL,0,0,0,0,0,0,0,2,NULL,0,NULL);
+INSERT INTO customers VALUES(61,'2022-05-10 15:34:30','David','Rosenberger','davidj.rosenberger@gmail.com',NULL,NULL,NULL,NULL,NULL,2,2,0,0,0,0,0,0,NULL,0,NULL);
+INSERT INTO customers VALUES(62,NULL,'Darvill','Mark','mark.darvill@mac.com','April Cottage','Sackmore Lane Mamhull','Sturminster Newton','Dorset','DT10 1PN',1,1,0,1,0,0,0,0,NULL,0,'United Kingdon');
+INSERT INTO customers VALUES(63,NULL,'Martin','Crockett','crockett.martin@gmail.com','153 Greenhill Rd',NULL,'Parkside','SA','SA 5063',1,1,0,1,1,0,0,0,NULL,0,'Australia');
+INSERT INTO customers VALUES(64,NULL,'Ross','Sponholtz','rsponholtz@gmail.com','16251 SE 8th St.',NULL,'Bellevue','WA','98008',1,0,0,1,0,0,1,1,NULL,0,NULL);
+INSERT INTO customers VALUES(65,NULL,'Dan','Schlegel','digitalneoplasm@gmail.com','3738 County Route 57',NULL,'Oswego','NY','13126',1,0,0,1,0,0,0,0,NULL,0,NULL);
+CREATE TABLE orders (
+id          int PRIMARY KEY ,
+order_date  int NOT NULL,
+product_id  int NOT NULL,
+customer_id int NOT NULL,
+order_no    text,
+qty         int NOT NULL,
+ship_date   int,
+ship_status text
+);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,1,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',3,1,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',4,1,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',5,1,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',6,1,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',7,1,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,2,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',4,2,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',5,2,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',7,2,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,3,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',2,3,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,4,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',3,4,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',4,4,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',5,4,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,5,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',3,5,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,6,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',3,6,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',4,6,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',5,6,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',6,6,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,7,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',3,7,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',4,7,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',5,7,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',7,7,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',2,8,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',3,8,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',4,8,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',8,8,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,9,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',4,9,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,10,NULL,2,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',2,10,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',5,10,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,11,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',3,11,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',5,11,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,12,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',2,12,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',3,12,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',4,12,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',5,12,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,13,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',3,13,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',5,13,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',6,13,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,14,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,15,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',3,15,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',4,15,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',5,15,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',8,15,NULL,2,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,16,NULL,2,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',2,16,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',3,16,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',4,16,NULL,4,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',5,16,NULL,2,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',6,16,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',8,16,NULL,4,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,17,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',3,17,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',4,17,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',7,17,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,18,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',2,18,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',4,18,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,19,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',2,19,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',8,24,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,20,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',2,20,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,21,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',3,21,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',4,21,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',5,21,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',6,21,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',8,21,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,22,NULL,4,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',3,22,NULL,2,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',4,22,NULL,2,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',8,22,NULL,2,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',8,23,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,25,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',3,25,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',4,25,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',8,25,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',7,25,NULL,2,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,26,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',3,26,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',4,26,NULL,2,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',5,26,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',6,26,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,27,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',2,27,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,28,NULL,2,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',2,28,NULL,2,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',3,28,NULL,2,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',4,28,NULL,2,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',6,28,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,29,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',3,29,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,30,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',2,30,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',3,30,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',4,30,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',5,30,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',8,30,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,31,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',2,31,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',3,31,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',4,31,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',5,31,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',8,31,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,32,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',3,32,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',4,32,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',5,32,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',7,55,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,33,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',3,33,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',5,33,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',6,33,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,34,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',3,34,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',5,34,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',6,34,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',8,34,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',7,34,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',8,35,NULL,2,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',7,41,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,36,NULL,2,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',3,36,NULL,2,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',8,36,NULL,2,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,38,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',2,38,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',3,38,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',4,38,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',8,39,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,40,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',2,40,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',3,40,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',5,40,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,42,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',8,42,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',7,42,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,43,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',3,43,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',4,43,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',7,43,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,44,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',3,44,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',4,44,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',8,44,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',7,56,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,45,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',4,45,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',5,45,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',8,45,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',7,45,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,46,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',3,46,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',4,46,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',5,46,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',7,46,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,47,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',3,47,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',4,47,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',5,47,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',6,47,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,48,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',2,48,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',3,48,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',6,48,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',7,48,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,49,NULL,2,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',3,49,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',4,49,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',5,49,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',8,49,NULL,2,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,50,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',2,50,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',3,50,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',6,50,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,51,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',2,51,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',3,51,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',4,51,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',5,51,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',6,51,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',8,51,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',7,51,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,52,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',4,52,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',5,52,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',7,57,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,53,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',2,53,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',3,53,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',4,53,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',5,53,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',6,53,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',8,53,NULL,2,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',7,53,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',1,54,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',2,54,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',3,54,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',4,54,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',5,54,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',6,54,NULL,1,NULL,NULL);
+INSERT INTO orders VALUES(NULL,'2022-04-26 08:30:00',8,54,NULL,1,NULL,NULL);
+CREATE TABLE products (
+id          int PRIMARY KEY ,
+name        text,
+description text,
+part_number text
+);
+INSERT INTO products VALUES(1,'S-100 Chassis','S-100 Reproduction IMSAI Chassis','');
+INSERT INTO products VALUES(2,'Blank Bezel','','DC-10-0013');
+INSERT INTO products VALUES(3,'FPmini Bezel','','DC-10-0011');
+INSERT INTO products VALUES(4,'IMSAI Bezel','','DC-10-0002');
+INSERT INTO products VALUES(5,'9-Slot backplane PCB','','PCB-9BACKPLANE');
+INSERT INTO products VALUES(6,'FPMini PCB','','PCB-FPMINI');
+INSERT INTO products VALUES(7,'IMSAI CPA PCB','','PCB-IMSAI-CPA');
+INSERT INTO products VALUES(8,'IMSAI Switch Set','','NKK-LRG-SET');
+INSERT INTO products VALUES(9,'i8212','Intel i8212 chip','');
+INSERT INTO products VALUES(10,'8T97','','');
+INSERT INTO products VALUES(11,'Card Cage Panel','Chassis Card Cage Panel','DC-10-001');
+INSERT INTO products VALUES(12,'Chassis Bottom','Chassis Bottom','DC-10-0003');
+INSERT INTO products VALUES(13,'Chassis Rear','Chassis Rear','DC-10-0004');
+INSERT INTO products VALUES(14,'CPA Switch Bracket','CPA Switch Bracket','DC-10-0005');
+INSERT INTO products VALUES(15,'PCB Front Panel Mount','PCB Front Panel Mount','DC-10-0006');
+INSERT INTO products VALUES(16,'Chassis Top Cover','Chassis Top Cover','DC-10-0007');
+INSERT INTO products VALUES(17,'FPMini Switch Bracket','FPMini Switch Bracket','DC-10-0010');
+INSERT INTO products VALUES(18,'FPMini Front Bezel','FPMini Front Bezel','DC-10-0011');
+INSERT INTO products VALUES(19,'Blank Front Bezel','Blank Front Bezel','DC-10-0013');
+INSERT INTO products VALUES(20,'CPA Acrylic panel - Clear','CPA Acrylic panel - Clear','DC-10-0009');
+INSERT INTO products VALUES(21,'CPA Acrylic panel - Red','CPA Acrylic panel - Red','DC-10-0008');
+INSERT INTO products VALUES(22,'FPMini Acrylic panel - Clear','FPMini Acrylic panel - Clear','DC-10-0012');
+INSERT INTO products VALUES(23,'AC Power Connector','AC Power Connector','090-978');
+INSERT INTO products VALUES(24,'92mm DC Fan','92mm DC Fan','CFM-9225B8');
+INSERT INTO products VALUES(25,'3.5" card guide','3.5" card guide','749-SDC-400');
+COMMIT;

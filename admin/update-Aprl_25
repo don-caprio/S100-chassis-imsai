@@ -1,0 +1,27 @@
+UPDATE customers set imsai_cpa_pcb_cnt = 1 WHERE id = 45;
+UPDATE customers set imsai_cpa_pcb_cnt = 1 WHERE id = 48;
+UPDATE customers set imsai_cpa_pcb_cnt = 1 WHERE id = 53;
+UPDATE customers set imsai_cpa_pcb_cnt = 1 WHERE id = 1;
+UPDATE customers set imsai_cpa_pcb_cnt = 1 WHERE id = 42;
+UPDATE customers set imsai_cpa_pcb_cnt = 1 WHERE id = 51;
+UPDATE customers set imsai_cpa_pcb_cnt = 1 WHERE id = 7;
+UPDATE customers set imsai_cpa_pcb_cnt = 1 WHERE id = 46;
+UPDATE customers set imsai_cpa_pcb_cnt = 1 WHERE id = 34;
+UPDATE customers set imsai_cpa_pcb_cnt = 1 WHERE id = 17;
+UPDATE customers set imsai_cpa_pcb_cnt = 1 WHERE id = 43;
+UPDATE customers set imsai_cpa_pcb_cnt = 2 WHERE id = 25;
+UPDATE customers set imsai_cpa_pcb_cnt = 1 WHERE id = 2;
+UPDATE customers set imsai_cpa_pcb_cnt = 1 WHERE id = 55;
+UPDATE customers set imsai_cpa_pcb_cnt = 1 WHERE id = 56;
+UPDATE customers set imsai_cpa_pcb_cnt = 1 WHERE id = 57;
+UPDATE customers set chassis_cnt = 1       WHERE id = 25;
+
+#chassis_cnt
+#blank_bezel_cnt
+#fpMini_bezel_cnt
+#imsai_Bezel_cnt
+#nineslot_pcb_cnt
+#fpmini_pcb_cnt
+#imsai_switch_set_cnt
+#imsai_cpa_pcb_cnt
+

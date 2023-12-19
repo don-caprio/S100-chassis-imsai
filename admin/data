@@ -1,0 +1,29 @@
+
+#INSERT INTO products (id, name, description, part_number) VALUES (1,'S-100 Chassis','S-100 Reproduction IMSAI Chassis','');
+#INSERT INTO products (id, name, description, part_number) VALUES (2,'Blank Bezel','','DC-10-0013');
+#INSERT INTO products (id, name, description, part_number) VALUES (3,'FPmini Bezel','','DC-10-0011');
+#INSERT INTO products (id, name, description, part_number) VALUES (4,'IMSAI Bezel','','DC-10-0002');
+#INSERT INTO products (id, name, description, part_number) VALUES (5,'9-Slot backplane PCB','','PCB-9BACKPLANE');
+#INSERT INTO products (id, name, description, part_number) VALUES (6,'FPMini PCB','','PCB-FPMINI');
+#INSERT INTO products (id, name, description, part_number) VALUES (7,'IMSAI CPA PCB','','PCB-IMSAI-CPA');
+#INSERT INTO products (id, name, description, part_number) VALUES (8,'IMSAI Switch Set','','NKK-LRG-SET');
+#INSERT INTO products (id, name, description, part_number) VALUES (9,'i8212','Intel i8212 chip','');
+#INSERT INTO products (id, name, description, part_number) VALUES (10,'8T97','','');
+
+
+INSERT INTO products (id, name, description, part_number) VALUES (11,'Card Cage Panel','Chassis Card Cage Panel','DC-10-001');
+INSERT INTO products (id, name, description, part_number) VALUES (12,'Chassis Bottom','Chassis Bottom','DC-10-0003');
+INSERT INTO products (id, name, description, part_number) VALUES (13,'Chassis Rear','Chassis Rear','DC-10-0004');
+INSERT INTO products (id, name, description, part_number) VALUES (14,'CPA Switch Bracket','CPA Switch Bracket','DC-10-0005');
+INSERT INTO products (id, name, description, part_number) VALUES (15,'PCB Front Panel Mount','PCB Front Panel Mount','DC-10-0006');
+INSERT INTO products (id, name, description, part_number) VALUES (16,'Chassis Top Cover','Chassis Top Cover','DC-10-0007');
+INSERT INTO products (id, name, description, part_number) VALUES (17,'FPMini Switch Bracket','FPMini Switch Bracket','DC-10-0010');
+INSERT INTO products (id, name, description, part_number) VALUES (18,'FPMini Front Bezel','FPMini Front Bezel','DC-10-0011');
+INSERT INTO products (id, name, description, part_number) VALUES (19,'Blank Front Bezel','Blank Front Bezel','DC-10-0013');
+INSERT INTO products (id, name, description, part_number) VALUES (20,'CPA Acrylic panel - Clear','CPA Acrylic panel - Clear','DC-10-0009');
+INSERT INTO products (id, name, description, part_number) VALUES (21,'CPA Acrylic panel - Red','CPA Acrylic panel - Red','DC-10-0008');
+INSERT INTO products (id, name, description, part_number) VALUES (22,'FPMini Acrylic panel - Clear','FPMini Acrylic panel - Clear','DC-10-0012');
+INSERT INTO products (id, name, description, part_number) VALUES (23,'AC Power Connector','AC Power Connector','090-978');
+INSERT INTO products (id, name, description, part_number) VALUES (24,'92mm DC Fan','92mm DC Fan','CFM-9225B8');
+INSERT INTO products (id, name, description, part_number) VALUES (25,'3.5" card guide','3.5" card guide','749-SDC-400');
+

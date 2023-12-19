@@ -1,0 +1,39 @@
+CREATE TABLE customers (
+id                 int PRIMARY KEY,
+date               int,
+fname              text,
+lname              text,
+email              text,
+street_addr1       text,
+street_addr2       text,
+city               text,
+state              text,
+zip                text,
+chassis_cnt        int default 0,
+blank_bezel_cnt    int default 0,
+fpMini_bezel_cnt   int default 0,
+imsai_Bezel_cnt    int default 0,
+nineslot_pcb_cnt   int default 0,
+fpmini_pcb_cnt     int default 0,
+imsai_switch_set_cnt   int default 0,
+imsai_cpa_pcb_cnt  int default 0,
+invoice_no         text,
+amount_rcvd        int default 0 
+, country text);
+
+CREATE TABLE orders (
+id          int PRIMARY KEY ,
+order_date  int NOT NULL,
+product_id  int NOT NULL,
+customer_id int NOT NULL,
+order_no    text,
+qty         int NOT NULL,
+ship_date   int,
+ship_status text
+);
+CREATE TABLE products (
+id          int PRIMARY KEY ,
+name        text,
+description text,
+part_number text
+);

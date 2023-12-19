@@ -1,0 +1,82 @@
+
+Dear S100 enthusist;
+
+Thank you for your continued support on the S100 Replica IMSAI
+chassis. There have been many questions and it's difficult
+to keep up with all the questions. Please visit the PBworks
+S100 chassis page for up to date developments and builders notes.
+
+
+Chassi Notes
+
+ 1) Replica IMSAI chassis is designed around the replica IMSAI CPA
+    front panel PCB and the S100 9-slot backplane. Please note that 
+    the switch positions are a little skewed so it's not a drop in 
+    exact replacement for the original IMSAI. Same goes for the switch
+    bezel.
+
+ 2) IMSAI chassis configurations ship with:
+     - Switch bracket (Mounts to PCB board)
+     - Two plexi glass clear panels.
+     - Powered coated Front switch bezel
+     - The photomask and white paper backing are NOT included. These
+       are still a work in progress and final design is still being
+       researched. Our two options are a vynyl negative or a clear 
+       film negative printed on a UV printer. Reports have been made that
+       printing on a transparancy with an 11x17 printer could be possible.
+ 
+  3) Chassis kits do NOT come with:
+     - Paddle switches. They can be ordered separatly. 
+     - Cooling Fan. This could be AC or DC depending on which power supply
+       you go with. I didn't want to lock people in. 
+     - IMSAI graphics photomask
+     - White Paper backing for photomask
+     - Power supply
+
+  4) Switch brackets. Two style switch brackets are available which provide
+     strain relief for the switches as to not crack traces on the PCB. 
+     a) FP Mini - 2-56 machine screws are provided. Youll need to tap the
+        holes as they are un threaded. You might be able to use a #4 x 1/4
+        sheet metal screw instead. May require drilling the holes a little 
+        larger. 
+     b) Full size CPA. The bracket is mounted to the CPA using holes labeled
+        P3 and P4. Use 1/2" nylon spacers and 7/8" nylon screw anmd nut.
+        DO NOT solder your switches into the PCB until you have them 
+        mounted on the switch bracket. This will ensure that your switches
+        are even and uniform.
+        The paddle switches are mounted to the bracket using #6 x 1/4 sheet 
+        metal screws. I personaly like to tap and use a machine screw. The 
+        sheet metal screws are easly striped. Use an M4 tap and M4 screw for
+        best fit.
+
+  5) CP-A PCB mounting.
+     Unfortunitly the vendor installed the incorrect size cinch nuts for the eight
+     mounting holes (P5-P12) in the front sheet metal part. The cinch nuts used were 
+     metric ??? which will not fit through the holes in the CP-A board. 
+     The holes in the CPA PCB were designed for 6-32 x 1 1/2 screws. Some kits were 
+     shipped with the 6-32 replacement cinch nuts but it's up to you to replace them. 
+     It may be easier to just use regular 6-32 nuts and epoxy them in place. 
+     I'll try and get a video together to show replacement options.
+     16 1/4" nylon spacers are needed to mount the PCB and plexiglass. I was shipping
+     these in the kits but ran out. If you need a set please email me a request.
+
+  6) Backplane.
+     Chassis was designed to use Josh's 9-slot backplane. The backplane must be mounted
+     to the bottom of the chassi with screws and nylon spacers or I found that the old
+     PC brass stand-offs (or better yet the nylon standoffs) work as well. I am no 
+     longer shipping these. I've found that not all of the female S100 connectors 
+     are the same height. You'll need to experiment with nylon spacers and file or 
+     trim accordingly. I poersonally like the nylon stand-offs. Order short ones and
+     you can add nylon washers to get to correct height, or extra long and cut as needed.
+
+  7) Card cage. 
+     The mounting holes for the card guides are a little to large. The guieds
+     fit however they are a little loose. Try some CA glue to secure. A soldering iron
+     could also be used to melt a tab. Walt Pergo has created a 3D printed version. 
+     See the PBWorks website for the 3D files to print your own.
+
+  8) Cover screw holes. The holes for the four mounting screws in the powder coated 
+     cover are too small. Drill out to fit the M4 machine screws. Cover is attatched 
+     with M4 machine screws. Chassis has mating M4 rivnuts. This modification has 
+     been done on some kits.
+

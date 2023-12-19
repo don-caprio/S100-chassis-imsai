@@ -1,0 +1,88 @@
+#qty,product_id,customer_id,product_id,name,txn_amt,order_date
+1,7,45,187,Michael Petry,35.50,25/04/2022,25/04/2022
+1,7,48,186,Bill Saltzstein,35.50,25/04/2022,25/04/2022
+1,7,53,184,Doug Wood,35.50,24/04/2022,24/04/2022
+1,7,1,183,Sean Adkins,35.50,23/04/2022,23/04/2022
+1,7,42,182,Mike Noel,35.50,23/04/2022,23/04/2022
+1,7,51,181,Wayne Warthen,35.50,23/04/2022,23/04/2022
+1,7,7,180,Greg Bober,35.50,23/04/2022,23/04/2022
+1,7,46,179,Peter Plank,35.50,22/04/2022,22/04/2022
+1,7,34,177,John Kennedy,35.50,22/04/2022,22/04/2022
+1,7,17,176,Laurence Church,35.50,22/04/2022,22/04/2022
+1,7,43,174,James O'Keefe,35.50,22/04/2022,22/04/2022
+2,7,25,173,donald forsyth,68.60,22/04/2022,22/04/2022
+1,7,2,171,Evan Allen,35.50,22/04/2022,22/04/2022
+1,7,55,185,Mark Huffstutter,35.50,25/04/2022,25/04/2022
+1,7,56,175,Walt Perko,35.50,22/04/2022,22/04/2022
+1,7,57,178,Robert Weatherford,35.50,22/04/2022,22/04/2022
+1,1,25,170,donald forsyth,190.60,04/04/2022,04/04/2022
+
+1|S-100 Chassis|S-100 Reproduction IMSAI Chassis
+2|Blank Bezel|
+3|FPmini Bezel|
+4|IMSAI Bezel|
+5|9-Slot backplane PCB|
+6|FPMini PCB|
+7|IMSAI CPA PCB|
+8|IMSAI Switch Set|
+9|i8212|Intel i8212 chip
+10|8T97|
+
+
+1|Sean|Adkins
+2|Evan|Allen
+3|Corey|Anderson
+4|Earl|Baugh
+5|Gregory|Beat
+6|Bob|Bell
+7|Greg|Bober
+8|Lyndon|BRADISH
+9|Roy|Bragg
+10|Henry|Broekhuyse
+11|Dennis|Bushmitch
+12|Leon|Byles
+13|Rich|Camarda
+14|Scott|Campbell
+15|donald|caprio
+16|David|Carroll
+17|Laurence|church
+18|Jay|Cotton
+19|Geoff|Coward
+20|Chris|Davis
+21|Eric|Dittman
+22|Randy|Eubanks
+23|Steven|Feinsmith
+24|Lenard|Dauksza
+25|donald|forsyth
+26|Jeff|Galinat
+27|Daniel|Gallant
+28|Todd|Goodman
+29|Bob|Grabau
+30|Steven|Hamilton
+31|James|Haug
+32|Andrew|Houck
+33|Doug|Jackson
+34|John|Kennedy
+35|Kevin|Kozlowski
+36|Steve|Mastrianni
+37|Dave|McGuire
+38|John|Monahan
+39|sgi|Nekonoko
+40|Mike|Niswonger
+41|Jesse|Lafleur
+42|Mike|Noel
+43|Jim|OKeefe
+44|Brent|Parker
+45|MIchael|Petry
+46|Peter|Plank
+47|Jerry|Prusa
+48|Bill|Saltzstein
+49|Al|Schemmer
+50|Thomas|VonDerHaar
+51|Wayne|Warthen
+52|robert|weatherford
+53|Douglas|Wood
+54|Leonard|Young
+55|Mark|Huffstutter
+56|Walt|Perko
+57|Robert|Weatherford
